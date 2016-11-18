@@ -56,6 +56,7 @@
 	
 	var Home = __webpack_require__(222);
 	var Main = __webpack_require__(223);
+	var About = __webpack_require__(224);
 	
 	window.onload = function () {
 	  ReactDOM.render(React.createElement(
@@ -65,7 +66,8 @@
 	      Route,
 	      { path: '/', component: Main },
 	      React.createElement(IndexRoute, { component: Home }),
-	      React.createElement(Route, { path: 'home', component: Home })
+	      React.createElement(Route, { path: 'home', component: Home }),
+	      React.createElement(Route, { path: 'about', component: About })
 	    )
 	  ), document.getElementById('app'));
 	};
@@ -25454,8 +25456,11 @@
 	'use strict';
 	
 	var React = __webpack_require__(1);
-	var Home = __webpack_require__(222);
 	var Link = __webpack_require__(159).Link;
+	
+	var Home = __webpack_require__(222);
+	var About = __webpack_require__(224);
+	
 	var Main = React.createClass({
 	  displayName: 'Main',
 	
@@ -25463,11 +25468,6 @@
 	    return React.createElement(
 	      'div',
 	      null,
-	      React.createElement(
-	        'h4',
-	        null,
-	        ' Main App'
-	      ),
 	      React.createElement(
 	        'ul',
 	        null,
@@ -25479,6 +25479,15 @@
 	            { to: '/home' },
 	            'Home'
 	          )
+	        ),
+	        React.createElement(
+	          'li',
+	          null,
+	          React.createElement(
+	            Link,
+	            { to: '/about' },
+	            'About'
+	          )
 	        )
 	      ),
 	      this.props.children
@@ -25487,6 +25496,37 @@
 	});
 	
 	module.exports = Main;
+
+/***/ },
+/* 224 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(1);
+	
+	var About = React.createClass({
+	  displayName: 'About',
+	
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      null,
+	      React.createElement(
+	        'h4',
+	        null,
+	        ' About '
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        ' About Page '
+	      )
+	    );
+	  }
+	});
+	
+	module.exports = About;
 
 /***/ }
 /******/ ]);

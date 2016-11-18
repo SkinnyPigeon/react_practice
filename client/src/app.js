@@ -8,6 +8,7 @@ var hashHistory = require('react-router').hashHistory
 
 var Home = require('./components/Home.jsx');
 var Main = require('./components/Main.jsx');
+var About = require('./components/About.jsx');
 
 window.onload = function(){
   ReactDOM.render(
@@ -15,6 +16,7 @@ window.onload = function(){
       <Route path="/" component={ Main }>
         <IndexRoute component={ Home } />
         <Route path="home" component={ Home } />
+        <Route path="about" component={ About } />
       </Route>
     </Router>,
     document.getElementById( 'app' )
