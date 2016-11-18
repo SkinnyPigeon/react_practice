@@ -25477,7 +25477,7 @@
 	          React.createElement(
 	            Link,
 	            { to: '/about' },
-	            'About'
+	            ' About '
 	          )
 	        ),
 	        React.createElement(
@@ -25486,7 +25486,7 @@
 	          React.createElement(
 	            Link,
 	            { to: '/home' },
-	            'Home'
+	            ' Home '
 	          )
 	        )
 	      ),

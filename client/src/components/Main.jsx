@@ -9,10 +9,10 @@ var Main = React.createClass({
     return(
       <div>
         <ul>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/home">Home</Link></li>
+          <li><Link to="/about"> About </Link></li>
+          <li><Link to="/home"> Home </Link></li>
         </ul>
-        {this.props.children}
+        { this.props.children }
       </div>
     )
   }
