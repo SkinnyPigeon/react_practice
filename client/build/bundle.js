@@ -55,6 +55,7 @@
 	var hashHistory = __webpack_require__(159).hashHistory;
 	
 	var Home = __webpack_require__(222);
+	var Main = __webpack_require__(223);
 	
 	window.onload = function () {
 	  ReactDOM.render(React.createElement(
@@ -25445,6 +25446,47 @@
 	});
 	
 	module.exports = Home;
+
+/***/ },
+/* 223 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(1);
+	var Home = __webpack_require__(222);
+	var Link = __webpack_require__(159).Link;
+	var Main = React.createClass({
+	  displayName: 'Main',
+	
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      null,
+	      React.createElement(
+	        'h4',
+	        null,
+	        ' Main App'
+	      ),
+	      React.createElement(
+	        'ul',
+	        null,
+	        React.createElement(
+	          'li',
+	          null,
+	          React.createElement(
+	            Link,
+	            { to: '/home' },
+	            'Home'
+	          )
+	        )
+	      ),
+	      this.props.children
+	    );
+	  }
+	});
+	
+	module.exports = Main;
 
 /***/ }
 /******/ ]);

@@ -7,6 +7,7 @@ var IndexRoute = require('react-router').IndexRoute
 var hashHistory = require('react-router').hashHistory
 
 var Home = require('./components/Home.jsx');
+var Main = require('./components/Main.jsx');
 
 window.onload = function(){
   ReactDOM.render(
