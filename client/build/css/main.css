@@ -15,6 +15,7 @@ html {
   float: right;
   padding-right: 0.2em;
   font-size: 2em;
+  box-shadow: 2px black solid;
 }
 
 #app a {
@@ -22,6 +23,21 @@ html {
   color: black;
 }
 
+#app ul li:after {
+    content: "";
+    display: block;
+    float: right;
+    height: 1px;
+    width: 205%;
+    background: black;
+}
+
+#app ul li:hover {
+  font-weight: bold;
+}
+
 .title {
   font-size: 2em;
+  padding-top: 35px;
+  margin-top: 0;
 }
