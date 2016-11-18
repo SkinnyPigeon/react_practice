@@ -25422,26 +25422,26 @@
 /* 222 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	var React = __webpack_require__(1);
 	
 	var Home = React.createClass({
-	  displayName: 'Home',
+	  displayName: "Home",
 	
 	  render: function render() {
 	    return React.createElement(
-	      'div',
+	      "div",
 	      null,
 	      React.createElement(
-	        'h4',
-	        null,
-	        ' Home '
+	        "h2",
+	        { className: "title" },
+	        " Home "
 	      ),
 	      React.createElement(
-	        'p',
+	        "p",
 	        null,
-	        ' Home Page '
+	        " Home Page "
 	      )
 	    );
 	  }
@@ -25476,8 +25476,8 @@
 	          null,
 	          React.createElement(
 	            Link,
-	            { to: '/home' },
-	            'Home'
+	            { to: '/about' },
+	            'About'
 	          )
 	        ),
 	        React.createElement(
@@ -25485,8 +25485,8 @@
 	          null,
 	          React.createElement(
 	            Link,
-	            { to: '/about' },
-	            'About'
+	            { to: '/home' },
+	            'Home'
 	          )
 	        )
 	      ),
@@ -25501,26 +25501,26 @@
 /* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	var React = __webpack_require__(1);
 	
 	var About = React.createClass({
-	  displayName: 'About',
+	  displayName: "About",
 	
 	  render: function render() {
 	    return React.createElement(
-	      'div',
+	      "div",
 	      null,
 	      React.createElement(
-	        'h4',
-	        null,
-	        ' About '
+	        "h2",
+	        { className: "title" },
+	        " About "
 	      ),
 	      React.createElement(
-	        'p',
+	        "p",
 	        null,
-	        ' About Page '
+	        " About Page "
 	      )
 	    );
 	  }

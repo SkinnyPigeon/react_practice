@@ -1,14 +1,14 @@
 var React = require( 'react' );
 var ReactDOM = require( 'react-dom' );
 
-var Router = require('react-router').Router
-var Route = require('react-router').Route
-var IndexRoute = require('react-router').IndexRoute
-var hashHistory = require('react-router').hashHistory
+var Router = require( 'react-router' ).Router
+var Route = require( 'react-router' ).Route
+var IndexRoute = require( 'react-router' ).IndexRoute
+var hashHistory = require( 'react-router' ).hashHistory
 
-var Home = require('./components/Home.jsx');
-var Main = require('./components/Main.jsx');
-var About = require('./components/About.jsx');
+var Home = require( './components/Home.jsx' );
+var Main = require( './components/Main.jsx' );
+var About = require( './components/About.jsx' );
 
 window.onload = function(){
   ReactDOM.render(
