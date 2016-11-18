@@ -1,3 +1,5 @@
+/*MAIN*/
+
 html {
   font-family: 'Amatic SC', cursive;
   height: 100%;
@@ -8,6 +10,8 @@ html {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#91e842',GradientType=0 );
   background-repeat: no-repeat;
 }
+
+/*LINKS*/
 
 #app li {
   list-style-type: none;
@@ -35,6 +39,8 @@ html {
 #app ul li:hover {
   font-weight: bold;
 }
+
+/*HEADINGS*/
 
 .title {
   font-size: 2em;

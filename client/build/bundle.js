@@ -57,6 +57,7 @@
 	var Home = __webpack_require__(222);
 	var Main = __webpack_require__(223);
 	var About = __webpack_require__(224);
+	var Contact = __webpack_require__(225);
 	
 	window.onload = function () {
 	  ReactDOM.render(React.createElement(
@@ -67,7 +68,8 @@
 	      { path: '/', component: Main },
 	      React.createElement(IndexRoute, { component: Home }),
 	      React.createElement(Route, { path: 'home', component: Home }),
-	      React.createElement(Route, { path: 'about', component: About })
+	      React.createElement(Route, { path: 'about', component: About }),
+	      React.createElement(Route, { path: 'contact', component: Contact })
 	    )
 	  ), document.getElementById('app'));
 	};
@@ -25460,6 +25462,7 @@
 	
 	var Home = __webpack_require__(222);
 	var About = __webpack_require__(224);
+	var Contact = __webpack_require__(225);
 	
 	var Main = React.createClass({
 	  displayName: 'Main',
@@ -25471,6 +25474,15 @@
 	      React.createElement(
 	        'ul',
 	        null,
+	        React.createElement(
+	          'li',
+	          null,
+	          React.createElement(
+	            Link,
+	            { to: '/contact' },
+	            ' Contact '
+	          )
+	        ),
 	        React.createElement(
 	          'li',
 	          null,
@@ -25527,6 +25539,37 @@
 	});
 	
 	module.exports = About;
+
+/***/ },
+/* 225 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	var React = __webpack_require__(1);
+	
+	var Contact = React.createClass({
+	  displayName: "Contact",
+	
+	  render: function render() {
+	    return React.createElement(
+	      "div",
+	      null,
+	      React.createElement(
+	        "h2",
+	        { className: "title" },
+	        " Contact "
+	      ),
+	      React.createElement(
+	        "p",
+	        null,
+	        " Contact Page "
+	      )
+	    );
+	  }
+	});
+	
+	module.exports = Contact;
 
 /***/ }
 /******/ ]);
